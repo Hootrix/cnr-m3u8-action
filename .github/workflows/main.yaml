@@ -1,0 +1,15 @@
+
+name: 'GitHub Actions cnr m3u8 Bot'
+ 
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * *'
+
+runs-on: ubuntu-latest
+steps:
+  - name: 'Checkout codes'
+    uses: actions/checkout@v1
+
+  - name: 'generate m3u8 file'
+  run: php ./main.php
