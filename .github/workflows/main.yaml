@@ -5,11 +5,12 @@ on:
   push:
   schedule:
     - cron: '0 0 * * *'
+jobs:
+  build-m3u8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
 
-runs-on: ubuntu-latest
-steps:
-  - name: 'Checkout codes'
-    uses: actions/checkout@v1
-
-  - name: 'generate m3u8 file'
-  run: php ./main.php
+      - name: 'generate m3u8 file'
+      run: php ./main.php
