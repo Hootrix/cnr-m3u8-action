@@ -8,3 +8,5 @@ action 每天更新m3u8内容到gh-pages分支
 地址：
 
 https://hootrix.github.io/cnr-m3u8-action/cnr.m3u8
+
+https://cdn.jsdelivr.net/gh/hootrix/cnr-m3u8-action@gh-pages/cnr.m3u8
